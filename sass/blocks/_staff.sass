@@ -1,0 +1,64 @@
+.staff
+    min-height: 1050px
+    &__title
+        font-weight: bold
+        font-size: 36p
+    &__box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .staff__card
+            margin-top: 20px
+            display: flex
+            flex-direction: column
+            align-items: center
+            height: 370px
+            width: 270px
+            border-radius: 6px
+            background: #fff
+            box-shadow: 0 0 10px rgba(0,0,0,0.5)
+            transition: 0.5s all
+            .staff__avatar
+                .rounded__wrap
+                    position: relative
+                    height: 195px
+                    width: 195px
+                    border-radius: 50%
+                    overflow: hidden
+                    z-index: 0
+                    .staff__img
+                        z-index: 1
+                    .circle
+                        background: #D8E4EB
+                        height: 100%
+                        width: 100%
+                        z-index: -1
+                        position: absolute
+                        top: 0
+                        transition: 0.5s all
+            .avatar__descr
+                .avatar__header
+                    font-weight: bold
+                    font-size: 20px
+                    text-align: center
+                .avatar__subheader
+                    font-size: 16px
+                    text-align: center
+                .avatar__link
+                    display: none
+                    font-weight: bold
+                    font-size: 16px
+                    color: #00C8C8
+                    text-align: center
+                    transition: 0.5s all
+            &:hover
+                height: 409px
+                width: 270px
+                .staff__avatar
+                    .rounded__wrap
+                        .circle
+                            background: #00C8C8
+                .avatar__descr
+                    .avatar__link
+                        display: block
+                        
