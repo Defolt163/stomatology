@@ -31,7 +31,7 @@ $(document).ready(function(){
         }, 'xml');
         });
 
-    $('ul.popular__quest').on('click', 'li:not(.quest__item_active)', function() {
+    $('.popular__quest').on('click', 'div:not(.quest__wrapper_active)', function() {
         $(this)
             .addClass('quest__wrapper_active').siblings().removeClass('quest__wrapper_active')
         });
