@@ -62,4 +62,21 @@ $(document).ready(function(){
           $('.modal__close').on('click', function(){
             $('.overlay, #feedback, #thank').fadeOut();
           });
+
+        $('form').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find('input').val('');
+            $('.overlay, #feedbackr').fadeOut();
+    
+            $('form').trigger('reset');
+        });
+        return false;
+        });
+
+        $('input[name=phone]').mask("+7 (999) 999 99-99");
   });
