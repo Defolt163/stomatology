@@ -35,7 +35,7 @@
                     </div>
                     <a href="tel:+71234567890" class="phone__num">+7 (123) 456-78-90</a>
                 </div>
-                <button class="button">Записаться на прием</button>
+                <button data-modal="feedback" class="button">Записаться на прием</button>
             </div>
             <div class="second__level">
                 <ul class="menu">
@@ -61,7 +61,7 @@
                             <div class="title">Cовременная клиника, в которой приятно лечить зубы!</div>
                             <div class="subtitle">Мы поможем достичь совершенства, используя современные технологии и знания, лучшее оборудование в сочетании 
                             с высоким профессионализмом наших докторов!</div>
-                            <button class="button">Записаться на прием</button>
+                            <button data-modal="feedback" class="button">Записаться на прием</button>
                         </div>
                         <div class="promo__img">
                             <img src="img/people/isolated-shot-of-cheerful-satisfied-young-female-with-pleasant-look-broad-chaming-smile-tattooed-arm-dressed-in-casual-whte-t-shirt-poses-in-studio-glad-to-achieve-success-at-work-and-life 1.png" alt="woman" class="promo__woman">
@@ -75,7 +75,7 @@
                             <div class="title">Cовременная клиника, в которой приятно лечить зубы!</div>
                             <div class="subtitle">Мы поможем достичь совершенства, используя современные технологии и знания, лучшее оборудование в сочетании 
                             с высоким профессионализмом наших докторов!</div>
-                            <button class="button">Записаться на прием</button>
+                            <button data-modal="feedback" class="button">Записаться на прием</button>
                         </div>
                         <div class="promo__img">
                             <img src="img/people/isolated-shot-of-cheerful-satisfied-young-female-with-pleasant-look-broad-chaming-smile-tattooed-arm-dressed-in-casual-whte-t-shirt-poses-in-studio-glad-to-achieve-success-at-work-and-life 1.png" alt="woman" class="promo__woman">
@@ -184,7 +184,7 @@
                     <form action="#" class="req__form">
                         <input placeholder="Имя" required type="text">
                         <input placeholder="+7(999)999-99-99" required type="number">
-                        <button class="button button_f">Записаться на прием</button>
+                        <button data-modal="feedback" class="button button_f">Записаться на прием</button>
                     </form>
                 </div>
             </div>
@@ -476,6 +476,102 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="block__copirate">
+                    <img src="ico/logo/logo.png" alt="logo" class="footer__logo">
+                    <div class="copirate__text">“Социальная стоматология” 2021
+                        Все права защищены.</div>
+                </div>
+                <div class="services__block">
+                    <div class="enum__header">Услуги</div>
+                    <div class="enum__list">
+                        <a href="#" class="enum__link"><div class="enum__item">Терапевтические услуги</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Иньекции, анастезия</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Ортопедические услуги</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Протезирование</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Имплантация</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Хирургия</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Ортодонтия</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Детская стоматология</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Парадонтология</div></a>
+                    </div>
+                </div>
+                <div class="patient__block">
+                    <div class="enum__header">Пациентам</div>
+                    <div class="enum__list">
+                        <a href="#" class="enum__link"><div class="enum__item">О клинике</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Цены</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Акции</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Лаборатория</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Портфолио</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Отзывы</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Статьи</div></a>
+                        <a href="#" class="enum__link"><div class="enum__item">Контакты</div></a>
+                    </div>
+                </div>
+                <div class="other__box">
+                    <div class="contacts">
+                        <div class="enum__header">Контакты</div>
+                        <div class="phone">
+                            <div class="phone__ico">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.93807 14.062C7.64731 11.7712 7.13007 9.48049 7.01338 8.5627C6.98077 8.30892 7.0681 8.05443 7.24966 7.87414L9.10345 6.02118C9.37614 5.74865 9.42454 5.32393 9.22014 4.99704L6.26855 0.413871C6.04242 0.0519049 5.57811 -0.0787322 5.19641 0.112216L0.45807 2.3438C0.149405 2.49579 -0.032148 2.82374 0.00289757 3.16601C0.251173 5.52463 1.27945 11.3227 6.97738 17.021C12.6753 22.7194 18.4726 23.7472 20.8324 23.9955C21.1747 24.0306 21.5026 23.849 21.6546 23.5403L23.8862 18.802C24.0764 18.4211 23.9467 17.9581 23.5862 17.7315L19.003 14.7808C18.6763 14.5762 18.2516 14.6242 17.9789 14.8966L16.1259 16.7504C15.9456 16.932 15.6912 17.0193 15.4374 16.9867C14.5196 16.87 12.2288 16.3528 9.93807 14.062Z" fill="#00C8C8"/>
+                                <path d="M19.0345 12.8277C18.5774 12.8277 18.2069 12.4572 18.2069 12.0001C18.203 8.57376 15.4264 5.79711 12 5.79323C11.5429 5.79323 11.1724 5.42271 11.1724 4.96565C11.1724 4.50858 11.5429 4.13806 12 4.13806C16.3401 4.14285 19.8573 7.66001 19.8621 12.0001C19.8621 12.4572 19.4916 12.8277 19.0345 12.8277Z" fill="#00C8C8"/>
+                                <path d="M23.1724 12.8276C22.7154 12.8276 22.3449 12.4571 22.3449 12C22.3385 6.28936 17.7107 1.66156 12 1.65517C11.5429 1.65517 11.1724 1.28465 11.1724 0.827586C11.1724 0.370523 11.5429 0 12 0C18.6244 0.0072976 23.9927 5.37561 24 12C24 12.2195 23.9128 12.43 23.7576 12.5852C23.6024 12.7404 23.3919 12.8276 23.1724 12.8276Z" fill="#00C8C8"/>
+                                </svg>
+                            </div>
+                            <a href="tel:+71234567890" class="phone__num">+7 (123) 456-78-90</a>
+                        </div>
+                        <div class="adr">
+                            <div class="map__ico">
+                                <svg viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0C4.20726 0 0.308105 3.89916 0.308105 8.69184C0.308105 14.6397 8.0865 23.3715 8.41767 23.7404C8.72873 24.0868 9.27182 24.0862 9.58232 23.7404C9.9135 23.3715 17.6919 14.6397 17.6919 8.69184C17.6918 3.89916 13.7927 0 9 0ZM9 13.065C6.58865 13.065 4.62693 11.1032 4.62693 8.69184C4.62693 6.2805 6.5887 4.31878 9 4.31878C11.4113 4.31878 13.373 6.28055 13.373 8.69189C13.373 11.1032 11.4113 13.065 9 13.065Z" fill="#00C8C8"/>
+                                </svg>
+                            </div>
+                            <div class="street">г. Раменское, ул. Воровского 8/1</div>
+                        </div>
+                        <div class="social__media">
+                            <div class="smm__text">Мы в соцсетях:</div>
+                            <div class="smm__wrapper">
+                                <div class="smm__ico"><i class="fab fa-instagram"></i></div>
+                                <div class="smm__ico"><i class="fab fa-vk"></i></div>
+                                <div class="smm__ico"><i class="fab fa-whatsapp"></i></div>
+                                <div class="smm__ico"><i class="fab fa-telegram-plane"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="container">
+            <div class="modal" id="feedback">
+                <div class="modal__close">&times;</div>
+                <div class="modal__wrapper">
+                    <div class="modal__header">Запись на прием</div>
+                    <form action="#" class="feedback-form">
+                        <div class="form__subheader">Ваше Имя</div>
+                        <input placeholder="Имя" required type="text">
+                        <div class="form__subheader">Ваш номер телефона</div>
+                        <input placeholder="+7(999)999 99-99" required type="number">
+                        <button class="button button_form">Запись</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal" id="thank">
+                <div class="modal__close">&times;</div>
+                <div class="modal__wrapper">
+                    <div class="modal__header">Заявка отправлена</div>
+                    <div class="modal__subheader">Мы свяжемся с вами в ближайшее время</div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

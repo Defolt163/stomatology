@@ -37,21 +37,29 @@ $(document).ready(function(){
         }); */
 
         var acc = document.getElementsByClassName("quest__border");
-var i;
+        var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("quest__border_active");
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("quest__border_active");
 
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
         }
-    });
-}
+
+        $('[data-modal=feedback]').on('click', function(){
+            $('.overlay, #feedback').fadeIn();
+          });
+      
+          $('.modal__close').on('click', function(){
+            $('.overlay, #feedback, #thank').fadeOut();
+          });
   });

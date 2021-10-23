@@ -1,0 +1,52 @@
+.overlay
+    display: none
+    position: fixed
+    background: rgba(0, 0, 0, .5)
+    width: 100%
+    height: 100%
+    top: 0
+    .modal
+        position: absolute
+        transform: translate(50%, -50%)
+        top: 50%
+        right: 50%
+        &__wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            width: 500px
+            height: 380px
+            background: #fff
+            .modal__header
+                font-size: 40px
+                font-weight: bold
+            .feedback-form
+                display: flex
+                flex-direction: column
+                width: 90%
+                input
+                    padding-left: 33px
+                    height: 60px
+                    border-radius: 50px
+                    border: 1px solid #00C8C8
+                    font-weight: normal
+                    font-size: 16px
+                    color: #000
+                    outline: 0
+                    margin-bottom: 15px
+                    &:last-child
+                        margin: 0
+        &__close
+            position: absolute
+            line-height: 56px
+            position: absolute
+            top: -70px
+            right: -50px
+            font-size: 90px
+            color: #ddd
+            cursor: pointer
+
+#feedback, #thank, .overlay
+    display: none
+            
