@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.caorusel__inner').slick(
+    $('.caorusel__inner, .caorusel__inner_feedback').slick(
         {
             dots: true,
             nextArrow: '<button type="button" class="slick-next"><img src="ico/arrows/right.svg"></button>',
@@ -29,5 +29,10 @@ $(document).ready(function(){
             }
             $img.replaceWith($svg);
         }, 'xml');
+        });
+
+    $('ul.popular__quest').on('click', 'li:not(.quest__item_active)', function() {
+        $(this)
+            .addClass('quest__wrapper_active').siblings().removeClass('quest__wrapper_active')
         });
   });

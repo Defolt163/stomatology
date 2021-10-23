@@ -1,0 +1,55 @@
+.questions
+    &__header
+        font-weight: bold
+        font-size: 36px
+        text-align: center
+    .popular__quest
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        .quest__wrapper
+            list-style: none
+            .quest__item
+                width: 600px
+                .text__block
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    .answer
+                        margin: 30px 0 30px 0
+                        display: none
+                    .quest
+                        width: 100%
+                        align-items: center
+                        justify-content: center
+                        height: 50px
+                        border: 3px solid #D8E4EB
+                        border-radius: 55px
+                        display: flex
+                        font-weight: bold
+                        font-size: 16px
+                        .plus
+                            background: #00C8C8
+                            height: 24px 
+                            width: 6px
+                            position: relative 
+                            left: 50px
+                            transition: 0.5s all
+                            &::after
+                                content: ""
+                                height: 6px 
+                                width: 24px
+                                background: #00C8C8
+                                position: absolute 
+                                left: -9px 
+                                top: 9px
+            &_active
+                .quest__item
+                    .text__block
+                        .quest
+                            .plus
+                                animation: rotate 0.5s
+                                background: none
+                        .answer
+                            display: block
