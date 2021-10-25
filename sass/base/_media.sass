@@ -1,0 +1,412 @@
+@media ( max-width: 1399px)
+    .header
+        .first__level
+            .logo
+                width: 20%
+            .header__adress
+                width: 20% !important
+            .header__phone
+                width: 20% !important
+    .caorusel
+        .caorusel__inner 
+            .slick-next
+                right: 0
+                left: auto
+            .slick-prev
+                left: 0
+    .request
+        display: flex
+        align-items: center
+        .request__wrapper
+            .req_man
+                .req__dots
+                    height: 195px
+            
+    .questions 
+        .popular__quest 
+            .column
+                .quest__wrapper
+                    width: 550px
+    footer
+        .footer__wrapper
+            .other__box
+                .social__media
+                    .smm__wrapper
+                        width: 80% !important
+    
+@media ( max-width: 1199px)
+    .header 
+        .first__level 
+            .header__phone 
+                .phone__num
+                    font-size: 20px !important
+    .caorusel
+        min-height: 630px !important
+    .staff
+        margin-bottom: 50px
+        &__box
+            justify-content: space-around !important
+    .request 
+        overflow-x: clip
+        .request__wrapper 
+            .req_man 
+                width: 250px
+                .req__img
+                    z-index: 1
+                    left: 0
+                    &_invert
+                        left: auto
+                .req__dots
+                    position: absolute
+                    left: 0
+                    z-index: 0
+                    &_invert
+                        left: auto
+    .questions 
+        .popular__quest 
+            .quest__wrapper 
+                width: 460px !important
+                .quest__border 
+                    width: 100%
+                    .plus
+                        display: none
+    footer
+        .footer__wrapper
+            .block__copirate
+                .footer__logo
+                    width: 100%
+
+@media ( max-width: 1110px)
+    .request 
+        .request__wrapper 
+            .req_man 
+                .req__img
+                    left: -6%
+
+@media ( max-width: 991px)
+    h2
+        font-size: 36px !important
+    .header 
+        .first__level 
+            .header__adress
+                justify-content: space-around !important
+                .street
+                    font-size: 12px !important
+            .header__phone
+                .phone__num
+                    font-size: 14px !important
+    .caorusel
+        min-height: 450px !important
+        padding-top: 0 !important
+        .caorusel__inner 
+            .promo__elements 
+                .promo__descr 
+                    width: 60%
+                    .title
+                        font-size: 31px
+                .promo__img
+                    width: auto
+                    .promo__woman
+                        width: 100%
+    .service
+        .card__box
+            .card
+                width: 48% !important
+    .about
+        .about__title
+            .about__descr
+                width: 100%
+            .image__block
+                display: none
+    .request
+        .request__wrapper
+            .req_man
+                display: none
+            .form__wrapper
+                align-items: center
+                .req__form
+                    width: 100%
+                    input
+                        width: 220px
+    .feedback 
+        .caorusel_feedback 
+            .caorusel__inner_feedback 
+                .feedback__box 
+                    .card__feedback 
+                        width: 32% !important
+                        .feedback__title
+                            font-size: 17px !important
+                        .feedback__descr
+                            font-size: 13px !important
+                        .ac__name
+                            font-size: 16px !important
+    .questions
+        .popular__quest
+            .quest__wrapper
+                width: 340px !important
+                .quest__border
+                    height: 80px
+                    .quest__title
+                        width: 83%
+    footer 
+        .footer__wrapper 
+            .other__box 
+                width: 23% !important
+                .phone__num
+                    font-size: 14px !important
+                .street
+                    width: 100% !important
+                .social__media 
+                    .smm__wrapper
+                        width: 100% !important
+
+@media ( max-width: 768px)
+    .header
+        .first__level
+            .logo
+                width: 50%
+            .header__adress
+                display: none !important
+            .button_head
+                display: none
+            .header__phone
+                display: none !important
+            .humburger
+                padding-top: 8px
+                display: block !important
+                position: absolute
+                right: 40px
+                top: 10%
+                transform: translateY(-50%)
+                width: 40px
+                height: 40px
+                z-index: 3
+                span
+                    display: block
+                    height: 3px
+                    width: 100%
+                    background-color: #303030
+                    margin-bottom: 6px
+                    transition: 0.5s all
+                &_active
+                    position: fixed
+                    span
+                        margin-bottom: -2px
+                        &:nth-last-child(1)
+                            transform: translateY(3px) rotate(-50deg)
+                        &:nth-last-child(2)
+                            display: none
+                        &:nth-last-child(3)
+                            transform: translateY(3px) rotate(50deg)
+        .second__level
+            .menu
+                position: fixed
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                text-align: center
+                top: -200%
+                right: 0
+                width: 100%
+                height: 100vh
+                padding: 20px 15px
+                background-color: #fffffffb
+                transition: 0.6s all
+                .menu_link
+                    text-align: center
+                &_active
+                    z-index: 2
+                    top: 0
+    .about
+        .ico__box
+            .ico__item
+                .ico__descr
+                    font-size: 12px !important
+@media ( max-width: 767px)
+    .header
+        min-height: 120px !important
+    .caorusel 
+        .caorusel__inner 
+            .promo__elements 
+                .promo__descr
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    .title
+                        font-size: 33px
+                    .subtitle
+                        font-size: 18px
+                .promo__img 
+                    position: static
+                    .promo__woman
+                        display: none
+                    .bg__dots
+                        left: 16%
+    .staff
+        .staff__box
+            .staff__card
+                width: 47%
+    .feedback 
+        .caorusel_feedback 
+            .caorusel__inner_feedback 
+                margin-bottom: 30px !important
+                .feedback__box
+                    height: 530px
+                    flex-direction: column
+                    .card__feedback
+                        height: auto !important
+                        width: 100% !important
+                        .feedback__title
+                            order: 2 !important
+                        .feedback__descr
+                            order: 3 !important
+                        .feedback__account
+                            order: 1 !important
+                            align-items: flex-end
+    .questions
+        .popular__quest
+            flex-direction: column
+            .quest__wrapper
+                width: auto !important
+                .quest__border
+                    .quest__title
+                        width: 90%
+    .request
+        display: block
+        padding-top: 26px
+        .request__wrapper
+            justify-content: center
+    footer
+        .footer__wrapper
+            flex-direction: column
+            .services__block, .patient__block
+                display: none
+            .block__copirate
+                order: 2
+                width: 41% !important
+            .other__box
+                justify-content: space-between
+                order: 1
+                width: 100% !important
+                .contacts
+                    display: flex
+@media ( max-width: 670px)
+    .request
+        .request__wrapper
+            .form__wrapper
+                .req__form
+                    input
+                        width: 100% !important
+                    .button_f
+                        width: 100%
+@media ( max-width: 600px)
+    .overlay
+        .modal
+            &__close
+                top: -15px !important
+                right: 0 !important
+@media ( max-width: 556px)
+    .about
+        .ico__box
+            flex-wrap: wrap
+            .ico__item
+                width: 50%
+@media ( max-width: 556px)
+    .staff
+        .staff__box
+            flex-wrap: nowrap
+            flex-direction: column
+            align-items: center
+            .staff__card
+                width: 75%
+    .feedback
+        .caorusel_feedback
+            .feedback__box
+                .card__feedback
+                    .feedback__text
+                        order: 2
+                    .feedback__account
+                        order: 1
+
+@media ( max-width: 531px)
+    .feedback
+        .caorusel_feedback
+            .feedback__box
+                .card__feedback
+                    flex-direction: row !important
+                    justify-content: space-evenly
+                    .feedback__text
+                        width: 70%
+                    .feedback__account
+                        width: 15% !important
+                        flex-direction: column
+                        align-items: center !important
+                    &:last-child
+                        display: none !important
+@media ( max-width: 480px)
+    .overlay
+        .modal
+            .modal__wrapper
+                width: 400px
+    .feedback
+        .caorusel_feedback
+            .caorusel__inner_feedback
+                margin-bottom: 20px !important
+    .request
+        .request__wrapper
+            .form__wrapper
+                .req__form
+                    flex-direction: column
+                    height: 190px
+                    margin-bottom: 30px
+@media ( max-width: 375px)
+    .header
+        .first__level
+            .logo
+                width: 70%
+            .humburger
+                right: 20px
+                top: 10%
+    .feedback
+        height: 660px !important
+        .caorusel_feedback
+            margin-top: 40px
+            .caorusel__inner_feedback
+                height: 290px
+                .feedback__box
+                    justify-content: normal !important
+                    .card__feedback
+                        flex-direction: row !important
+                        justify-content: space-evenly
+                        .feedback__text
+                            width: 70%
+                        .feedback__account
+                            width: 15% !important
+                            flex-direction: column
+                            align-items: center !important
+                        &:nth-last-child(2)
+                            display: none !important
+@media ( max-width: 358px)
+    .feedback
+        min-height: 710px !important
+        .caorusel_feedback
+            .caorusel__inner_feedback
+                height: 380px
+
+@media ( max-width: 327px)
+    footer
+            .footer__wrapper
+                .other__box
+                    .social__media
+                        .smm__wrapper
+                            flex-direction: column
+                            .smm__ico
+                                margin-bottom: 15px
+@media ( max-width: 324px)
+    .questions 
+        .popular__quest 
+            .quest__wrapper 
+                .quest__border 
+                    .quest__title
+                        font-size: 14px !important
